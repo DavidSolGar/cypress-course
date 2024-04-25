@@ -9,7 +9,12 @@
     "test": "ng test",
     "e2e": "ng e2e",
     "cypress:run": "npx cypress run",
-    "ci": "start-test start http-get://localhost:4200 cypress:run"
+    "ci": "start-test start http-get://localhost:4200 cypress:run",
+    
+    "cy:open_dev": "npx cypress open --env username=solizDEV@gmail.com,password=dev123",
+    "cy:open_qa": "npx cypress open --env username=solizQA@gmail.com,password=qa123",
+
+    "cy:open_process": "npx cypress open --env username=$DB_USERNAME,password=$PASSWORD"
   },
   "author": "",
   "license": "ISC",
